@@ -1,0 +1,22 @@
+.page--home {
+
+  width: 100%;
+
+  > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .videos-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .video {
+      margin-bottom: 50px;
+    }
+  }
+
+}

@@ -1,0 +1,29 @@
+.video {
+
+  &__info {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    margin-bottom: 0px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__rank {
+    color: white;
+    background-color: #2980b9;
+    font-size: 30px;
+    // border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+
+}
