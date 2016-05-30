@@ -2,6 +2,7 @@ import React from 'react'
 import { browserHistory } from 'react-router'
 
 import Video from 'components/Video.jsx'
+import FakePlayer from 'components/FakePlayer.jsx'
 
 class Home extends React.Component {
 
@@ -17,18 +18,14 @@ class Home extends React.Component {
 
   render() {
 
-    let videos = [
+    let videosData = [
       {
-        xid: 'x4ddaju',
-        title: 'PSY - GANGNAM STYLE(강남스타일) M/V'
-      },
-      {
-        xid: 'x4ddaju',
-        title: 'PSY - GANGNAM STYLE(강남스타일) M/V'
+        xid: 'x4ddwjg',
+        title: 'Funny Cats Compilation'
       }
     ]
 
-    videos = videos.map((video,i) => {
+    let videos = videosData.map((video,i) => {
       return (
         <Video
           rank={i}
@@ -38,11 +35,12 @@ class Home extends React.Component {
         />
       )
     })
+    // <FakePlayer videos={videosData} name="p1" />
 
     return (
       <div className="page page--home">
 
-        <h1>Most popular videos on internet</h1>
+        <h1>Discover the most popular cat videos!</h1>
 
         <div className="videos-list">
           { videos }

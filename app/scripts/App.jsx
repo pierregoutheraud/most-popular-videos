@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import { Router, Route, browserHistory } from 'react-router'
 
 import Home from './pages/Home.jsx'
+import YoutubeVideos from './pages/YoutubeVideos.jsx'
 
 /*
 (function() {
@@ -31,6 +32,7 @@ function renderApp() {
   ReactDOM.render(
     <Router history={browserHistory}>
       <Route path="/" component={Home} />
+      <Route path="/videos" component={YoutubeVideos} />
     </Router>
     , document.querySelector('.app')
   )
